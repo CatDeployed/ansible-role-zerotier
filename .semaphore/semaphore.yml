@@ -26,7 +26,7 @@ blocks:
             - wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
             - wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
             - sudo apt-get update
-            - sudo apt-get install virtualbox-${VIRTUALBOX_MAIN_VERSION}=${VIRTUALBOX_MINOR_VERSION}\*
+            - sudo apt-get -y install virtualbox-${VIRTUALBOX_MAIN_VERSION}=${VIRTUALBOX_MINOR_VERSION}\*
             - wget https://download.virtualbox.org/virtualbox/${VIRTUALBOX_MINOR_VERSION}/Oracle_VM_VirtualBox_Extension_Pack-${VIRTUALBOX_MINOR_VERSION}.vbox-extpack
             - sudo VBoxManage extpack install --replace Oracle_VM_VirtualBox_Extension_Pack-${VIRTUALBOX_MINOR_VERSION}.vbox-extpack
             - rm Oracle_VM_VirtualBox_Extension_Pack-${VIRTUALBOX_MINOR_VERSION}.vbox-extpack
