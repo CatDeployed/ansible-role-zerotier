@@ -9,11 +9,11 @@ blocks:
     task:
       env_vars:
         - name: VAGRANT_VERSION
-          value: 2.2.14
+          value: "2.2.14"
         - name: VIRTUALBOX_MAIN_VERSION
-          value: 6.1
+          value: "6.1"
         - name: VIRTUALBOX_MINOR_VERSION
-          value: 6.1.18
+          value: "6.1.18"
       jobs:
         - name: 'Test Playbook'
           commands:
